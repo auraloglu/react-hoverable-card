@@ -28,7 +28,8 @@ import 'react-hoverable-card/dist/index.css'
 
 const App = () => {
   return (
-    <HoverableCard cardTitle="Lorem Ipsum"
+    <HoverableCard
+      cardTitle="Lorem Ipsum"
       cardDescription="Phasellus tincidunt vestibulum elit vel laoreet. Vivamus tincidunt augue eget lacus blandit tempor."
       cardImage="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
       hoverBgColor="grey"

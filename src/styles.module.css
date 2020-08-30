@@ -1,0 +1,99 @@
+/* add css module styles here (optional) */
+
+.card{
+  width: 270px;
+  height: 210px;
+  background-color: #FFFFFF;
+  margin-right: 27px;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12);
+  border-radius: 4px;
+}
+.cardTitle {
+  position: absolute;
+  bottom: 30px;
+  font-size: 18px;
+  animation: animate-title-out 0.3s ease both;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Raleway" sans-serif;
+}
+
+.cardHovered {
+  background-color: grey;
+}
+
+.cardBackgroundImage {
+  opacity: 0.2;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: -250px;
+  top: -150px;
+}
+
+.cardImage {
+  transform: scale(1);
+  transition: all 0.3s;
+  width: 140px;
+}
+
+.cardDescriptionHover {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  width: 210px;
+  font-family: "Raleway" sans-serif;
+}
+
+.card:hover .cardTitle {
+  animation: animate-title 0.3s ease both;
+}
+
+.card:hover .cardDescriptionHover {
+  animation: animate-description 0.3s ease both;
+  visibility: visible;
+}
+
+.card:hover .cardImage {
+  transform: scale(0.6) translateX(-130px) translateY(-80px);
+}
+
+@keyframes animate-title {
+  0% {
+    transform: translateX(10px) translateY(100px);
+    color: #000000
+  }
+  100% {
+    transform: translateX(15px) translateY(-113px);
+    color: #FFFFFF
+  }
+}
+
+@keyframes animate-title-out {
+  0% {
+    transform: translateX(15px) translateY(-113px);
+    color: #FFFFFF
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    color: #000000
+  }
+}
+
+@keyframes animate-description {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-170px) translateY(35px);
+    color: #FFFFFF
+  }
+}

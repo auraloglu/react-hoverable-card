@@ -17,7 +17,8 @@
     "prepare": "run-s build",
     "test": "jest --coverage",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "peerDependencies": {
     "react": "^16.0.0"

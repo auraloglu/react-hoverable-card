@@ -6,7 +6,6 @@
 [![Build Status](https://travis-ci.org/cappydh/react-hoverable-card.svg?branch=master)](https://travis-ci.org/cappydh/react-hoverable-card)
 [![NPM](https://img.shields.io/npm/v/react-hoverable-card.svg)](https://www.npmjs.com/package/react-hoverable-card)
 
-
 ## Install
 
 ```bash

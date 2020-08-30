@@ -10,7 +10,7 @@
 
 ## Example
 
-![Example](example/2020-08-24_22-03-39.gif)
+![Example](example/2020-08-27_20-47-06.gif)
 
 ## Install
 

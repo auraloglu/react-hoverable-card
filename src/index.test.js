@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { HoverableCard } from '.'
 
-describe('ExampleComponent', () => {
+describe('HoverableCard', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(HoverableCard).toBeTruthy()
   })
 })

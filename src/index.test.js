@@ -2,7 +2,6 @@ import { HoverableCard } from '.'
 import React from 'react'
 import Adapter from 'enzyme-adapter-react-16'
 import { shallow, configure } from 'enzyme'
-import { getByTestId } from '@testing-library/jest-dom/matchers'
 
 configure({ adapter: new Adapter() })
 
@@ -31,7 +30,7 @@ describe('HoverableCard', () => {
     expect(description).toEqual(descriptionData)
     expect(image).toEqual(imgUrlData)
   })
-  it('sets css background color when hovered', () => {
+  it('sets background color when hovered', () => {
     const wrapper = shallow(
       <HoverableCard
         cardTitle='Lorem Ipsum'

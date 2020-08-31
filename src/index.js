@@ -34,7 +34,7 @@ export const HoverableCard = ({
 
   return (
     <div
-      data-testid='button'
+      data-testid='card'
       className={styles.card}
       style={isHovered ? { backgroundColor: hoverBgColor || 'grey' } : {}}
       onMouseEnter={() => onMouseEnter()}

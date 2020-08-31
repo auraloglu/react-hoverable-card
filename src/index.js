@@ -13,7 +13,11 @@ export const HoverableCard = ({
     if (isHovered) {
       return (
         <div>
-          <img src={cardImage} className={styles.cardBackgroundImage} />
+          <img
+            data-testid='bgImage'
+            src={cardImage}
+            className={styles.cardBackgroundImage}
+          />
         </div>
       )
     }
@@ -30,6 +34,7 @@ export const HoverableCard = ({
 
   return (
     <div
+      data-testid='button'
       className={styles.card}
       style={isHovered ? { backgroundColor: hoverBgColor || 'grey' } : {}}
       onMouseEnter={() => onMouseEnter()}
@@ -37,10 +42,14 @@ export const HoverableCard = ({
     >
       {renderBackground()}
       <div>
-        <img className={styles.cardImage} src={cardImage} />
-        <span className={styles.cardDescriptionHover}>{cardDescription}</span>
+        <img data-testid='image' className={styles.cardImage} src={cardImage} />
+        <span data-testid='description' className={styles.cardDescriptionHover}>
+          {cardDescription}
+        </span>
       </div>
-      <div className={styles.cardTitle}>{cardTitle}</div>
+      <div data-testid='title' className={styles.cardTitle}>
+        {cardTitle}
+      </div>
     </div>
   )
 }
